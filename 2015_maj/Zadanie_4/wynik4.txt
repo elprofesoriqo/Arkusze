@@ -1,0 +1,8 @@
+Zadanie 1:
+Ilo��: 422
+Zadanie 2:
+Ilo�� podzielnych przez 2: 500
+ilosc podzielnych przez 8: 123
+Zadanie 3:
+Najwi�ksza liczba: 1605828497222164613922119051741599036763721501353852720943011, Numer: 925
+Najmniejsza liczba: 4, Numer: 859
