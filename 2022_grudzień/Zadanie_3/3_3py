@@ -1,0 +1,33 @@
+def pierwsza(n):
+
+    for i in range(2,round(n**(1/2))+1):
+        if n%i==0:
+            return False
+    return True
+
+
+pierwsze=[]
+for i in range(1,1000000):
+     if pierwsza(i):
+            pierwsze.append(i)
+
+
+
+
+rozklady={}
+ilosc={}
+with open("liczby.txt") as file:
+    for row in file:
+        row=int(row.strip())
+        r=0
+        rozklady[row] = []
+        for i in pierwsze:
+            r=row-i
+            if r in pierwsze and r not in rozklady[row]:
+                rozklady[row]+=[i,r]
+        rozklady[row] = list(set(rozklady[row]))
+        ilosc[row]=len(rozklady[row])
+
+
+
+print(max(ilosc.values()))
